@@ -1,0 +1,155 @@
+body {
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: auto;
+}
+
+/* colors */
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 31px;
+  padding-bottom: 90px;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  margin-right: 57px;
+}
+
+.header__nav-items {
+  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header__items {
+  margin-left: 25px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.header__items-a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.header__items-a:hover {
+  color: #ae2e11;
+  font-weight: bold;
+}
+
+.header__account {
+  display: flex;
+  align-items: center;
+}
+
+.header__hello {
+  display: inline-block;
+  margin-right: 11px;
+}
+
+.header__crop {
+  border-radius: 50%;
+  width: 33px;
+  height: 33px;
+}
+
+.hero {
+  background-image: url(../img/_hero/bg_hero.jpg);
+  background-repeat: no-repeat;
+}
+
+.main__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main__text {
+  max-width: 50%;
+}
+
+.main__suptitle {
+  font-size: 24px;
+  opacity: 0.5;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 0;
+}
+
+.main__title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  margin: 11px 0;
+}
+
+.main__discription {
+  font-size: 16px;
+  line-height: 150%;
+  margin: 0;
+}
+
+.main__watch {
+  margin: auto;
+  width: 100px;
+  height: 100%;
+}
+
+.about-content {
+  display: flex;
+  margin: 64px 0 66px;
+}
+
+.about-content__time {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-right: 34px;
+}
+
+.about-content__time-value {
+  margin-left: 14px;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.about-content__raiting {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.about-content__raiting-value {
+  margin-left: 14px;
+}
+
+.about-content__raiting-imdb {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 150%;
+}
+
+.about-content__raiting-max {
+  margin-left: 6px;
+  font-size: 16px;
+  line-height: 150%;
+}
