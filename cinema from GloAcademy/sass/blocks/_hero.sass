@@ -5,9 +5,8 @@
    // height: 100%
 .main
    &__content
-      display: flex
+      @include dfa
       justify-content: space-between
-      align-items: center
    &__text
 
       max-width: 50%
@@ -34,9 +33,8 @@
    display: flex
    margin: 47px 0 62px
    &__time
-      display: flex
+      @include dfa
       justify-content: start
-      align-items: center
       margin-right: 34px
    &__time-value
       margin-left: 14px
@@ -44,9 +42,7 @@
       font-size: 16px
       line-height: 150%
    &__raiting
-      display: flex
-      justify-content: start
-      align-items: center
+      @include dfaj
    &__raiting-value
       margin-left: 14px
    &__raiting-imdb

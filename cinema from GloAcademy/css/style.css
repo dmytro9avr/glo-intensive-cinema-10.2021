@@ -17,8 +17,11 @@ img {
 /* colors */
 .header__nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+}
+
+.header__nav-pos {
   padding-top: 31px;
   padding-bottom: 90px;
 }
@@ -82,8 +85,8 @@ img {
 
 .main__content {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
 .main__text {
@@ -123,8 +126,8 @@ img {
 
 .about-content__time {
   display: flex;
-  justify-content: start;
   align-items: center;
+  justify-content: start;
   margin-right: 34px;
 }
 
@@ -136,8 +139,8 @@ img {
 
 .about-content__raiting {
   display: flex;
-  justify-content: start;
   align-items: center;
+  justify-content: center;
 }
 
 .about-content__raiting-value {
@@ -181,9 +184,9 @@ img {
 
 .chose-date__date-items {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
   border: 1px solid rgba(255, 255, 255, 0.5);
   width: 88px;
   height: 88px;

@@ -1,13 +1,12 @@
 .header
    &__nav
-      display: flex
+      @include dfa
       justify-content: space-between
-      align-items: center
-      padding-top: 31px
-      padding-bottom: 90px
+      &-pos
+         padding-top: 31px
+         padding-bottom: 90px
    &__menu
-      display: flex
-      align-items: center
+      @include dfa
    &__logo
       margin-right: 57px
    &__nav-items
@@ -30,8 +29,7 @@
             color: #ae2e11
             font-weight: bold
    &__account
-      display: flex
-      align-items: center
+      @include dfa
    &__hello
       display: inline-block
       margin-right: 11px
@@ -44,3 +42,4 @@
       // display: flex
       // justify-content: center
       // align-items: center
+
