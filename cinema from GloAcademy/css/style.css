@@ -39,6 +39,7 @@ img {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  font-size: 14px;
 }
 
 .header__items {
@@ -64,6 +65,7 @@ img {
 .header__hello {
   display: inline-block;
   margin-right: 11px;
+  font-size: 16px;
 }
 
 .header__crop {
@@ -99,7 +101,7 @@ img {
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
-  margin: 11px 0;
+  margin: 11px 0 23px;
 }
 
 .main__discription {
@@ -116,7 +118,7 @@ img {
 
 .about-content {
   display: flex;
-  margin: 64px 0 66px;
+  margin: 47px 0 62px;
 }
 
 .about-content__time {
@@ -145,7 +147,6 @@ img {
 .about-content__raiting-imdb {
   font-weight: bold;
   font-size: 24px;
-  line-height: 150%;
 }
 
 .about-content__raiting-max {
@@ -157,11 +158,19 @@ img {
 .chose-date__items {
   display: flex;
   justify-content: space-between;
+  padding-top: 46px;
+  padding-bottom: 64px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .chose-date__day {
   display: flex;
   flex-direction: column;
+}
+
+.chose-date__name {
+  margin-bottom: 20px;
 }
 
 .chose-date__all-date {
@@ -187,6 +196,7 @@ img {
 }
 
 .chose-date__cinema-chose {
+  margin-top: 13px;
   width: 470px;
   height: 60px;
   background: rgba(255, 255, 255, 0.15);
@@ -200,6 +210,7 @@ img {
 }
 
 .chose-date__time-chose {
+  margin-top: 13px;
   width: 108px;
   height: 60px;
   background: rgba(255, 255, 255, 0.15);
