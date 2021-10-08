@@ -17,12 +17,18 @@
       @include dfaj
       flex-direction: column
       border: 1px solid $gline
+      border-radius: 5px
       width: 88px
       height: 88px
       margin-right: 15px
+      &:hover
+         background-color: $active-color 
    &__item-month
    &__item-day
+      font-weight: bold
+      font-size: 30px
    &__item-day-week
+      font-size: 19px
       // chose cinemateatr
    &__cinema
       display: flex
@@ -31,10 +37,13 @@
       margin-top: 13px
       width: 470px
       height: 60px
-      background: $gselect
       border: 1px solid $gline
       // box-sizing: border-box
       border-radius: 5px
+      +StyleSelect
+      background: $gselect
+      &:focus
+         background: $active-color
    &__time
       display: flex
       flex-direction: column
@@ -42,9 +51,11 @@
       margin-top: 13px
       width: 108px
       height: 60px
-      background: $gselect
       border: 1px solid $gline
       border-radius: 5px
-
+      +StyleSelect
+      background: $gselect
+      &:focus
+         background: $active-color
 
    
