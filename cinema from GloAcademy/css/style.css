@@ -3,6 +3,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 400;
+  background-color: #52130a;
 }
 
 img {
@@ -57,7 +58,7 @@ img {
 }
 
 .header__items-a:hover {
-  color: #ae2e11;
+  color: #FE8E05;
   font-weight: bold;
 }
 
@@ -80,6 +81,13 @@ img {
 
 .hero {
   background-image: url(../img/_hero/bg_hero.jpg);
+  background-image: url(/img/_hero/bg_hero.jpg);
+  background-image: url(.img/_hero/bg_hero.jpg);
+  background-image: url(..img/_hero/bg_hero.jpg);
+  background-image: url(../img/_hero/bg_hero.JPG);
+  background-image: url(/img/_hero/bg_hero.JPG);
+  background-image: url(.img/_hero/bg_hero.JPG);
+  background-image: url(..img/_hero/bg_hero.JPG);
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
