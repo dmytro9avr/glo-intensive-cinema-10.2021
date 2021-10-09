@@ -1,8 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   color: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 400;
+  background-color: #621402;
+  margin: 0;
 }
 
 img {
@@ -30,9 +36,6 @@ img {
 .header__menu {
   display: flex;
   align-items: center;
-}
-
-.header__logo {
   margin-right: 57px;
 }
 
@@ -57,8 +60,9 @@ img {
 }
 
 .header__items-a:hover {
-  color: #ae2e11;
+  color: #FE8E05;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .header__account {
@@ -79,9 +83,8 @@ img {
 }
 
 .hero {
-  background-image: url(../img/_hero/bg_hero.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% auto;
+  min-height: 100vh;
+  background: linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 85.62%), url(../img/bg.jpg) no-repeat center top/cover;
 }
 
 .main__content {
@@ -197,6 +200,7 @@ img {
 
 .chose-date__date-items:hover {
   background-color: #FE8E05;
+  cursor: pointer;
 }
 
 .chose-date__item-day {
@@ -250,4 +254,96 @@ img {
 
 .chose-date__time-chose:focus {
   background: #FE8E05;
+}
+
+.chose-seats {
+  min-width: 1170px;
+  min-height: 686px;
+  background: rgba(36, 36, 36, 0.18);
+  border-radius: 10px;
+  margin: auto;
+}
+
+.chose-seats__field {
+  margin: auto;
+  min-width: 1018px;
+}
+
+.chose-seats__block-screen {
+  margin: 50px auto 0;
+  border-top: 10px solid rgba(0, 0, 0, 0.39);
+}
+
+.chose-seats__block-1 {
+  min-width: 909px;
+  min-height: 176px;
+}
+
+.chose-seats__block-2 {
+  width: 477px;
+  height: 176px;
+}
+
+.chose-seats__block-3 {
+  width: 477px;
+  height: 176px;
+}
+
+.chose-seats__block-status {
+  width: 409px;
+  height: 29px;
+}
+
+.chose-seats__block-status, .chose-seats__status-free, .chose-seats__status-chosen, .chose-seats__status-busy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chose-seats__status-text {
+  margin-left: 15px;
+}
+
+.chose-summ {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 64px;
+  padding-bottom: 158px;
+}
+
+.chose-summ__title {
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 12px;
+}
+
+.chose-summ__summ {
+  font-size: 52px;
+  line-height: 61px;
+}
+
+.chose-summ__button {
+  width: 254px;
+  height: 69px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.chose-summ__button:hover {
+  background: #FE8E05;
+  cursor: pointer;
+}
+
+.chose-summ__button-text {
+  text-align: center;
+  font-size: 18px;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: 254px;
+  height: 69px;
+  display: inline-block;
+  padding: 10%;
 }

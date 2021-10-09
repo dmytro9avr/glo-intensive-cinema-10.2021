@@ -1,13 +1,15 @@
 .header
    &__nav
-      @include dfa
+      display: flex
+      align-items: center
       justify-content: space-between
       &-pos
          padding-top: 31px
          padding-bottom: 90px
    &__menu
-      @include dfa
-   &__logo
+      display: flex
+      align-items: center   
+      &__logo
       margin-right: 57px
    &__nav-items
       display: flex
@@ -28,8 +30,10 @@
          &:hover
             color: $active-color
             font-weight: bold
+            cursor: pointer
    &__account
-      @include dfa
+      display: flex
+      align-items: center   
    &__hello
       display: inline-block
       margin-right: 11px
