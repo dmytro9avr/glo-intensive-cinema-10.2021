@@ -1,0 +1,255 @@
+body {
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #52130a;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: auto;
+}
+
+/* colors */
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__nav-pos {
+  padding-top: 31px;
+  padding-bottom: 90px;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  margin-right: 57px;
+}
+
+.header__nav-items {
+  display: flex;
+  display: inline-block;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+.header__items {
+  margin-left: 25px;
+  display: inline-block;
+}
+
+.header__items-a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.header__items-a:hover {
+  color: #FE8E05;
+  font-weight: bold;
+}
+
+.header__account {
+  display: flex;
+  align-items: center;
+}
+
+.header__hello {
+  display: inline-block;
+  margin-right: 11px;
+  font-size: 16px;
+}
+
+.header__crop {
+  border-radius: 50%;
+  width: 33px;
+  height: 33px;
+}
+
+.hero {
+  background-image: url(../img/_hero/bg.jpg);
+  background-image: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.main__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main__text {
+  max-width: 50%;
+}
+
+.main__suptitle {
+  font-size: 24px;
+  opacity: 0.5;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 0;
+}
+
+.main__title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  margin: 11px 0 23px;
+}
+
+.main__discription {
+  font-size: 16px;
+  line-height: 150%;
+  margin: 0;
+}
+
+.main__watch {
+  margin: auto;
+  width: 100px;
+  height: 100%;
+}
+
+.about-content {
+  display: flex;
+  margin: 47px 0 62px;
+}
+
+.about-content__time {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-right: 34px;
+}
+
+.about-content__time-value {
+  margin-left: 14px;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.about-content__raiting {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-content__raiting-value {
+  margin-left: 14px;
+}
+
+.about-content__raiting-imdb {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.about-content__raiting-max {
+  margin-left: 6px;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.chose-date__items {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 46px;
+  padding-bottom: 64px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.chose-date__day {
+  display: flex;
+  flex-direction: column;
+}
+
+.chose-date__name {
+  margin-bottom: 20px;
+}
+
+.chose-date__all-date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chose-date__date-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  width: 88px;
+  height: 88px;
+  margin-right: 15px;
+}
+
+.chose-date__date-items:hover {
+  background-color: #FE8E05;
+}
+
+.chose-date__item-day {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.chose-date__item-day-week {
+  font-size: 19px;
+}
+
+.chose-date__cinema {
+  display: flex;
+  flex-direction: column;
+}
+
+.chose-date__cinema-chose {
+  margin-top: 13px;
+  width: 470px;
+  height: 60px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.chose-date__cinema-chose:focus {
+  background: #FE8E05;
+}
+
+.chose-date__time {
+  display: flex;
+  flex-direction: column;
+}
+
+.chose-date__time-chose {
+  margin-top: 13px;
+  width: 108px;
+  height: 60px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.chose-date__time-chose:focus {
+  background: #FE8E05;
+}
