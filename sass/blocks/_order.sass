@@ -25,9 +25,12 @@
       width: 88px
       height: 88px
       margin-right: 15px
+      &:last-child
+         margin-right: 0
       &:hover
          background-color: $active-color
          cursor: pointer
+         transition: 0.2s
    &__item-month
    &__item-day
       font-weight: bold
@@ -49,6 +52,8 @@
       background: $gselect
       &:focus
          background: $active-color
+         transition: 0.2s
+         cursor: pointer
    &__time
       display: flex
       flex-direction: column

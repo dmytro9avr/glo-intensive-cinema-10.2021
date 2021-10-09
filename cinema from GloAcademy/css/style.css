@@ -199,14 +199,10 @@ img {
   margin-right: 15px;
 }
 
-.chose-date__date-items:last-child {
-  margin-right: 0;
-}
-
 .chose-date__date-items:hover {
   background-color: #FE8E05;
   cursor: pointer;
-  transition: 0.2s;
+  transition: 2s;
 }
 
 .chose-date__item-day {
@@ -238,8 +234,6 @@ img {
 
 .chose-date__cinema-chose:focus {
   background: #FE8E05;
-  transition: 0.2s;
-  cursor: pointer;
 }
 
 .chose-date__time {
