@@ -1,3 +1,0 @@
-# glo-intensive
-
-studing
