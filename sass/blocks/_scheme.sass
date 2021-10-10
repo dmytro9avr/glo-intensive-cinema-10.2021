@@ -1,0 +1,83 @@
+.scheme 
+   padding-top: 30px
+   background: $schemeBG
+   border-radius: 10px
+   & > svg path:not(.light)
+      fill: $chair-free
+      &:hover
+         fill: $chair-hover
+         cursor: pointer
+         // auto -- free
+
+   & > svg path.booked
+      fill: $chair-booked
+      &:hover
+         fill: $chair-booked
+         cursor: not-allowed
+         // booked
+
+   & > svg path.chosen
+      fill: $chair-chosen
+      &:hover
+         fill: $chair-chosen
+
+
+.legend
+   border-top: 1px solid $gline
+   display: flex
+   align-items: center
+   max-width: 1024px
+   margin: auto
+   padding-top: 22px
+   padding-bottom: 38px
+
+   &__free-block, &__chosen-block, &__booked-block
+      display: flex
+      align-items: center
+      margin-right: 30px
+   &__text
+      margin-right: 16px
+      font-size: 12px
+      color: $gline
+
+   &__free
+      fill: $chair-free
+      color: $chair-free
+
+   &__chosen
+      fill: $chair-chosen
+      color: $chair-chosen
+   &__booked
+      fill: $chair-booked
+      color: $chair-booked
+
+
+
+.chose-summ
+   display: flex
+   align-items: center
+   justify-content: space-between
+   margin-top: 64px
+   padding-bottom: 158px
+   &__title
+      font-size: 18px
+      line-height: 21px
+      margin-bottom: 12px
+   &__summ
+      font-size: 52px
+      line-height: 61px
+   &__confirm
+   &__button
+      width: 254px
+      height: 69px
+      background: $gselect
+      border: 1px solid #000000
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+      border-radius: 5px
+      &:hover
+         background: $active-color
+         cursor: pointer
+         transition: 0.2s
+      &-text
+         font-size: 18px
+         color: $maintext-color

@@ -21,7 +21,6 @@ img {
   margin: auto;
 }
 
-/* colors */
 .header__nav {
   display: flex;
   align-items: center;
@@ -238,7 +237,8 @@ img {
   font-size: 16px;
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.15);
-  background: rgba(255, 255, 255, 0.15);
+  cursor: pointer;
+  padding: 18px;
 }
 
 .chose-date__cinema-chose:focus {
@@ -247,8 +247,8 @@ img {
   cursor: pointer;
 }
 
-.chose-date__cinema-chose span {
-  margin-left: 10px;
+.chose-date__cinema-chose option {
+  padding-left: 10px;
 }
 
 .chose-date__time {
@@ -266,59 +266,85 @@ img {
   font-size: 16px;
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.15);
-  background: rgba(255, 255, 255, 0.15);
+  cursor: pointer;
+  padding: 18px;
 }
 
 .chose-date__time-chose:focus {
   background: #FE8E05;
 }
 
-.chose-seats {
-  min-width: 1170px;
-  min-height: 686px;
+.chose-date__time-chose option {
+  padding-left: 10px;
+}
+
+.scheme {
+  padding-top: 30px;
   background: rgba(36, 36, 36, 0.18);
   border-radius: 10px;
-  margin: auto;
 }
 
-.chose-seats__field {
-  margin: auto;
-  min-width: 1018px;
+.scheme > svg path:not(.light) {
+  fill: rgba(255, 255, 255, 0.15);
 }
 
-.chose-seats__block-screen {
-  margin: 50px auto 0;
-  border-top: 10px solid rgba(0, 0, 0, 0.39);
+.scheme > svg path:not(.light):hover {
+  fill: white;
+  cursor: pointer;
 }
 
-.chose-seats__block-1 {
-  min-width: 909px;
-  min-height: 176px;
+.scheme > svg path.booked {
+  fill: rgba(255, 255, 255, 0.05);
 }
 
-.chose-seats__block-2 {
-  width: 477px;
-  height: 176px;
+.scheme > svg path.booked:hover {
+  fill: rgba(255, 255, 255, 0.05);
+  cursor: not-allowed;
 }
 
-.chose-seats__block-3 {
-  width: 477px;
-  height: 176px;
+.scheme > svg path.chosen {
+  fill: #FE8E05;
 }
 
-.chose-seats__block-status {
-  width: 409px;
-  height: 29px;
+.scheme > svg path.chosen:hover {
+  fill: #FE8E05;
 }
 
-.chose-seats__block-status, .chose-seats__status-free, .chose-seats__status-chosen, .chose-seats__status-busy {
+.legend {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  max-width: 1024px;
+  margin: auto;
+  padding-top: 22px;
+  padding-bottom: 38px;
 }
 
-.chose-seats__status-text {
-  margin-left: 15px;
+.legend__free-block, .legend__chosen-block, .legend__booked-block {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.legend__text {
+  margin-right: 16px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.legend__free {
+  fill: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.legend__chosen {
+  fill: #FE8E05;
+  color: #FE8E05;
+}
+
+.legend__booked {
+  fill: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.05);
 }
 
 .chose-summ {
@@ -356,12 +382,6 @@ img {
 }
 
 .chose-summ__button-text {
-  text-align: center;
   font-size: 18px;
-  text-decoration: none;
   color: #FFFFFF;
-  width: 254px;
-  height: 69px;
-  display: inline-block;
-  padding: 10%;
 }
