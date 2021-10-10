@@ -247,6 +247,10 @@ img {
   cursor: pointer;
 }
 
+.chose-date__cinema-chose span {
+  margin-left: 10px;
+}
+
 .chose-date__time {
   display: flex;
   flex-direction: column;
