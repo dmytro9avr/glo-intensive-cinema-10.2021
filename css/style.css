@@ -239,11 +239,12 @@ img {
 .chose-date__cinema {
   display: flex;
   flex-direction: column;
+  max-width: 470px;
+  width: 100%;
 }
 
 .chose-date__cinema-chose {
   margin-top: 13px;
-  width: 470px;
   height: 60px;
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 5px;
@@ -411,8 +412,9 @@ img {
     max-width: 960px;
     /* media*/
   }
-  .chose-date__cinema-chose {
-    width: 400px;
+  .chose-date__cinema {
+    max-width: 400px;
+    width: 100%;
   }
 }
 
@@ -424,6 +426,8 @@ img {
     flex-wrap: wrap;
   }
   .chose-date__cinema {
+    max-width: 400px;
+    width: 100%;
     margin-top: 40px;
     order: 3;
   }
@@ -437,7 +441,7 @@ img {
 
 @media (max-width: 768px) {
   .container {
-    max-width: 560px;
+    max-width: 720px;
     width: 90%;
   }
   .header__nav {
@@ -460,15 +464,14 @@ img {
     flex-direction: column;
     position: absolute;
     z-index: 9;
-    top: 30px;
+    top: 35px;
     left: 24px;
     background-color: rgba(255, 255, 255, 0.15);
     border-radius: 10px;
     min-width: 150px;
     opacity: 0;
     visibility: hidden;
-    transform: translateX(500%);
-    transition: opacity 0.5s transform 0.5s;
+    transition: opacity 0.5s;
   }
   .header__items:not(:last-child) {
     margin-bottom: 10px;
@@ -494,11 +497,23 @@ img {
   .header__nav-items-is-open {
     opacity: 1;
     visibility: visible;
-    transform: translateX(0);
     transition: opacity 0.2s;
     display: flex;
   }
-  .chose-date__cinema-chose {
-    width: 560px;
+  .chose-date__cinema {
+    max-width: 768px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 540px;
+    width: 90%;
+  }
+  .chose-date__day {
+    max-width: 570px;
+    width: 100%;
+    margin-bottom: 40px;
   }
 }

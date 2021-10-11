@@ -2,8 +2,9 @@
    .container
       max-width: 960px
       /* media*/
-   .chose-date__cinema-chose
-      width: 400px
+   .chose-date__cinema
+      max-width: 400px
+      width: 100%
 @media (max-width: 995px)
    .container
       max-width: 750px
@@ -12,6 +13,8 @@
          flex-wrap: wrap
       &__day
       &__cinema
+         max-width: 400px
+         width: 100%
          margin-top: 40px
          order: 3
    .header
@@ -23,7 +26,7 @@
 
 @media (max-width: 768px)
    .container
-      max-width: 560px
+      max-width: 720px
       width: 90%
    .header
       &__nav
@@ -44,15 +47,14 @@
          flex-direction: column
          position: absolute
          z-index: 9
-         top: 30px
+         top: 35px
          left: 24px
          background-color: $gselect
          border-radius: 10px
          min-width: 150px
          opacity: 0
          visibility: hidden
-         transform: translateX(500%)
-         transition: opacity 0.5s transform 0.5s
+         transition: opacity 0.5s
       &__items
          &:not(:last-child)
             margin-bottom: 10px
@@ -72,14 +74,83 @@
       &__text
          max-width: 100%
          order: 1
-         
+
    .header__nav-items-is-open
       opacity: 1
       visibility: visible
-      transform: translateX(0)
       transition: opacity 0.2s
       display: flex 
       // вынес отдельно что-бы перекрыть стили
-   .chose-date
-      &__cinema-chose
-         width: 560px
+   .chose-date__cinema
+      max-width: 768px
+      width: 100%
+
+
+
+
+@media (max-width: 576px)
+   .container
+      max-width: 540px
+      width: 90%
+   .chose-date__day
+      max-width: 570px
+      width: 100%
+      margin-bottom: 40px
+
+//    .header
+//       &__nav
+//          align-items: start
+//          &-items
+//             display: none
+//             &-is-open
+//                opacity: 1
+//                visibility: visible
+//                transform: translateX(0)
+//                transition: opacity 0.5s transform 0.5s
+
+//       &__menu-button
+//          display: block
+
+//       &__nav-items
+//          padding: 20px
+//          flex-direction: column
+//          position: absolute
+//          z-index: 9
+//          top: 35px
+//          left: 24px
+//          background-color: $gselect
+//          border-radius: 10px
+//          min-width: 150px
+//          opacity: 0
+//          visibility: hidden
+//          transition: opacity 0.5s
+//       &__items
+//          &:not(:last-child)
+//             margin-bottom: 10px
+
+//    .about-content
+//       margin-top: 20px
+//       margin-bottom: 35px
+//       &__menu
+//          align-items: start
+
+//    .main
+//       &__content
+//          flex-direction: column
+//       &__watch-logo
+//          margin-bottom: 25px
+//          order: 0
+//       &__text
+//          max-width: 100%
+//          order: 1
+
+//    .header__nav-items-is-open
+//       opacity: 1
+//       visibility: visible
+//       transition: opacity 0.2s
+//       display: flex 
+//       // вынес отдельно что-бы перекрыть стили
+//    .chose-date
+//       &__cinema-chose
+//          max-width: 560px
+//          width: 100%
