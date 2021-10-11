@@ -8,18 +8,29 @@
          padding-bottom: 90px
    &__menu
       display: flex
-      align-items: center   
-      &__logo
-      margin-right: 57px
+      align-items: center
+      position: relative
+      &-button
+         background-color: transparent
+         border: none
+         width: 40px
+         height: 40px
+         margin-left: 20px
+         display: none
+         coursore: pointer
+         & svg
+            fill: $maintext-color
+   // &__logo
+   //    margin-right: 57px
    &__nav-items
       display: flex
-      display: inline-block
       justify-content: space-between
       list-style-type: none
       // withou dot -- list style type 00 none
       padding: 0
       margin: 0
       font-size: 14px
+      min-width: 465px
    &__items
       margin-left: 25px
       // text-decoration: none

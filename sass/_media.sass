@@ -1,0 +1,85 @@
+@media (max-width: 1200px)
+   .container
+      max-width: 960px
+      /* media*/
+   .chose-date__cinema-chose
+      width: 400px
+@media (max-width: 995px)
+   .container
+      max-width: 750px
+   .chose-date
+      &__items
+         flex-wrap: wrap
+      &__day
+      &__cinema
+         margin-top: 40px
+         order: 3
+   .header
+      &__items
+         margin-left: 20px
+   .main
+      &__text
+         max-width: 65%
+
+@media (max-width: 768px)
+   .container
+      max-width: 560px
+      width: 90%
+   .header
+      &__nav
+         align-items: start
+         &-items
+            display: none
+            &-is-open
+               opacity: 1
+               visibility: visible
+               transform: translateX(0)
+               transition: opacity 0.5s transform 0.5s
+
+      &__menu-button
+         display: block
+
+      &__nav-items
+         padding: 20px
+         flex-direction: column
+         position: absolute
+         z-index: 9
+         top: 30px
+         left: 24px
+         background-color: $gselect
+         border-radius: 10px
+         min-width: 150px
+         opacity: 0
+         visibility: hidden
+         transform: translateX(500%)
+         transition: opacity 0.5s transform 0.5s
+      &__items
+         &:not(:last-child)
+            margin-bottom: 10px
+
+   .about-content
+      margin-top: 20px
+      margin-bottom: 35px
+      &__menu
+         align-items: start
+
+   .main
+      &__content
+         flex-direction: column
+      &__watch-logo
+         margin-bottom: 25px
+         order: 0
+      &__text
+         max-width: 100%
+         order: 1
+         
+   .header__nav-items-is-open
+      opacity: 1
+      visibility: visible
+      transform: translateX(0)
+      transition: opacity 0.2s
+      display: flex 
+      // вынес отдельно что-бы перекрыть стили
+   .chose-date
+      &__cinema-chose
+         width: 560px

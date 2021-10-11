@@ -35,17 +35,31 @@ img {
 .header__menu {
   display: flex;
   align-items: center;
-  margin-right: 57px;
+  position: relative;
+}
+
+.header__menu-button {
+  background-color: transparent;
+  border: none;
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+  display: none;
+  coursore: pointer;
+}
+
+.header__menu-button svg {
+  fill: #FFFFFF;
 }
 
 .header__nav-items {
   display: flex;
-  display: inline-block;
   justify-content: space-between;
   list-style-type: none;
   padding: 0;
   margin: 0;
   font-size: 14px;
+  min-width: 465px;
 }
 
 .header__items {
@@ -88,7 +102,7 @@ img {
 }
 
 .hero {
-  min-height: 100vh;
+  padding-bottom: 60px;
   background: linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 85.62%), url(../img/bg.jpg) no-repeat center top/cover;
 }
 
@@ -282,6 +296,11 @@ img {
   padding-top: 30px;
   background: rgba(36, 36, 36, 0.18);
   border-radius: 10px;
+  overflow-x: auto;
+}
+
+.scheme-svg {
+  max-width: 1170px;
 }
 
 .scheme > svg path:not(.light) {
@@ -315,6 +334,7 @@ img {
   display: flex;
   align-items: center;
   max-width: 1024px;
+  width: 90%;
   margin: auto;
   padding-top: 22px;
   padding-bottom: 38px;
@@ -384,4 +404,101 @@ img {
 .chose-summ__button-text {
   font-size: 18px;
   color: #FFFFFF;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+    /* media*/
+  }
+  .chose-date__cinema-chose {
+    width: 400px;
+  }
+}
+
+@media (max-width: 995px) {
+  .container {
+    max-width: 750px;
+  }
+  .chose-date__items {
+    flex-wrap: wrap;
+  }
+  .chose-date__cinema {
+    margin-top: 40px;
+    order: 3;
+  }
+  .header__items {
+    margin-left: 20px;
+  }
+  .main__text {
+    max-width: 65%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 560px;
+    width: 90%;
+  }
+  .header__nav {
+    align-items: start;
+  }
+  .header__nav-items {
+    display: none;
+  }
+  .header__nav-items-is-open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+    transition: opacity 0.5s transform 0.5s;
+  }
+  .header__menu-button {
+    display: block;
+  }
+  .header__nav-items {
+    padding: 20px;
+    flex-direction: column;
+    position: absolute;
+    z-index: 9;
+    top: 30px;
+    left: 24px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    min-width: 150px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(500%);
+    transition: opacity 0.5s transform 0.5s;
+  }
+  .header__items:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .about-content {
+    margin-top: 20px;
+    margin-bottom: 35px;
+  }
+  .about-content__menu {
+    align-items: start;
+  }
+  .main__content {
+    flex-direction: column;
+  }
+  .main__watch-logo {
+    margin-bottom: 25px;
+    order: 0;
+  }
+  .main__text {
+    max-width: 100%;
+    order: 1;
+  }
+  .header__nav-items-is-open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+    transition: opacity 0.2s;
+    display: flex;
+  }
+  .chose-date__cinema-chose {
+    width: 560px;
+  }
 }

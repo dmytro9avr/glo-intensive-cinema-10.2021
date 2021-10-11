@@ -1,9 +1,10 @@
-const schemeSvg = document.querySelector("#scheme-svg");
+const schemeSvg = document.querySelector(".scheme-svg");
 const totalPriceTag = document.querySelector(".price-total");
 // const totalPriceTag создали переменную totalPriceTag 
 // document.querySelector(".price-total") отправились искать по документу (в котором скрипт) обэкт с классном .price-total 
 // document.querySelector(".price-total") сказали что она равна с обэктом под классом .price-total
-
+const buttonMenu = document.querySelector(".header__menu-button");
+const nav = document.querySelector(".header__nav-items"); 
 
 let cost = 200;
 // let - обявить переменную. cost - ее название и =200  значение
@@ -15,6 +16,13 @@ schemeSvg.addEventListener("click", (event) => {
       totalPrice = totalChosen * cost;
       totalPriceTag.textContent = totalPrice;
    }
+});
+
+buttonMenu.addEventListener("click", (event) => {
+   event.target.classList.toggle(".button_active");
+   console.log("active");
+   nav.classList.toggle("header__nav-items-is-open");
+   // menu.classList.toggle(".header__nav-items-is-open");
 });
 
 
